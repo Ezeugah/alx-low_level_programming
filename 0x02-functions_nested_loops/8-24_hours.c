@@ -16,7 +16,7 @@ void jack_baver(void)
 			_putchar(':');
 			_putchar((minute / 10) + '0');
 			_putchar((minute % 10) + '0');
-			-putchar('\n');
+			_putchar('\n');
 		}
 	}
 }

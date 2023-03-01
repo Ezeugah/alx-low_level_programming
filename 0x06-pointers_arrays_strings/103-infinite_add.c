@@ -17,6 +17,7 @@ void rev_string(char *n)
 		i++;
 	}
 	i--;
+
 	for (j = 0; j < i; j++, i--)
 	{
 		temp = *(n + j);
@@ -24,14 +25,16 @@ void rev_string(char *n)
 		*(n + i) = temp;
 	}
 }
+
 /**
  * infinite_add - add 2 numbers together
  * @n1: text representation of 1st number to add
  * @n2: text representation of 2nd number to add
  * @r: pointer to buffer
  * @size_r: buffer size
- * Return: pointerto calling function
+ * Return: pointer to calling function
  */
+
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 	int overflow = 0, i = 0, j = 0, digits = 0;
@@ -42,7 +45,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	while (*(n2 + j) != '\0')
 		j++;
 	i--;
-	j++;
+	j--;
 	if (j >= size_r || i >= size_r)
 		return (0);
 	while (j >= 0 || i >= 0 || overflow == 1)
@@ -73,3 +76,19 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	rev_string(r);
 	return (r);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
